@@ -45,4 +45,8 @@ public class SmartDocument implements Document {
         }
         return "";
     }
+
+    public String getgcsPath() {
+        return gcsPath;
+    }
 }
