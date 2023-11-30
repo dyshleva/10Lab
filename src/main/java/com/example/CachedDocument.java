@@ -16,13 +16,13 @@ public class CachedDocument implements Document {
 
     @Override
     public String parse() {
-        String cachedResult = finder(this.getPath());
+        String cachedResult = finder(this.getgcsPath());
         if (cachedResult != null) {
             return cachedResult;
         }
 
         String result = doc.parse();
-        saver(this.getPath(), result);
+        saver(this.getgcsPath(), result);
         return result;
     }
 
