@@ -55,10 +55,10 @@ public class CachedDocument implements Document {
         }
     }
 
-    public String getPath() {
+    public String getgcsPath() {
         if (doc instanceof SmartDocument) {
             SmartDocument smartDoc = (SmartDocument) doc;
-            return smartDoc.getPath();
+            return smartDoc.getgcsPath();
         }
         return null;
     }
